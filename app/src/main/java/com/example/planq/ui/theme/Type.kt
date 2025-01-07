@@ -260,3 +260,35 @@ val Typography = Typography(
         letterSpacing = 0.5.sp
     )
 )
+
+/*
+* text의 내용으로는 해당 텍스트의 두께와 폰트 사이즈로 구성 ex) Extra_bold(두께)_40(폰트 사이즈)
+* TODO: 확인용!
+* */
+@Preview(showBackground = true)
+@Composable
+fun TypographyPreview() {
+    PlanQTheme {
+        Column {
+            Text(text = "Extra_bold(800)_40", style = PlanQTypography.H1)
+            Text(text = "Bold_24(700)", style = PlanQTypography.H2)
+            Text(text = "Semi_bold_36(600)", style = PlanQTypography.T1)
+            Text(text = "Semi_bold_32", style = PlanQTypography.T2)
+            Text(text = "Semi_bold_26", style = PlanQTypography.T3)
+            Text(text = "Semi_bold_24", style = PlanQTypography.T4)
+            Text(text = "Semi_bold_22", style = PlanQTypography.T5)
+            Text(text = "Semi_bold_20", style = PlanQTypography.T6)
+            Text(text = "Semi_bold_16", style = PlanQTypography.T7)
+            Text(text = "Medium_26(500)", style = PlanQTypography.B1)
+            Text(text = "Medium_22", style = PlanQTypography.B2)
+            Text(text = "Medium_20", style = PlanQTypography.B3)
+            Text(text = "Medium_18", style = PlanQTypography.B4)
+            Text(text = "Medium_16", style = PlanQTypography.B5)
+            Text(text = "Medium_14", style = PlanQTypography.B6)
+            Text(text = "Regular_20(400)", style = PlanQTypography.SubT1)
+            Text(text = "Regular_18", style = PlanQTypography.B7)
+            Text(text = "Regular_16", style = PlanQTypography.Cap1)
+            Text(text = "Regular_13", style = PlanQTypography.Cap2)
+        }
+    }
+}
